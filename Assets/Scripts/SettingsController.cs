@@ -8,17 +8,17 @@ public class SettingsController : MonoBehaviour
     public GameObject howToPlayPanel;
 
     // Update is called once per frame
-    public void SettingsPressed() 
+    public void SettingsPressed()
     {
         settingsPanel.SetActive(true);
     }
 
-    public void ToMainMenuPressed() 
+    public void ToMainMenuPressed()
     {
         settingsPanel.SetActive(false);
     }
 
-    public void HowToPlayPressed() 
+    public void HowToPlayPressed()
     {
         howToPlayPanel.SetActive(true);
     }
