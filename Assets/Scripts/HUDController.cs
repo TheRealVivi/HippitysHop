@@ -16,7 +16,7 @@ public class HUDController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        orbCount.text = Player.Instance.orbsInPossession.ToString() + " / 32";
+        orbCount.text = Player.Instance.orbsInPossession.ToString() + " / 10";
         if (SignInteraction.usable)
             hudText.text = "PRESS E TO INTERACT";
         else

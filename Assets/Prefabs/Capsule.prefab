@@ -1129,6 +1129,7 @@ GameObject:
   - component: {fileID: 7816699814293861604}
   - component: {fileID: 7816699814293861607}
   - component: {fileID: 7816699814293861606}
+  - component: {fileID: 4631523028792280296}
   - component: {fileID: 7816699814293861601}
   - component: {fileID: 4317514623088007542}
   m_Layer: 0
@@ -1206,6 +1207,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4631523028792280296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816699814293861600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2531cf70e115f914d871295ca4153396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    name: Hippity
+    sentances:
+    - HI! MY NAMES HIPPITY!
+    - LETS GO HOPPITY!
+    - I NEED YOU TO FIND ALL OF MY GRANDFATHERS LOST ORBS!
+    - They mean a lot to me...
+    - There is about 10 of them lying around this land, they look like the one in
+      the corner of this room.
+    - Good luck, and stay hoppity!
+  usableDistance: 2
 --- !u!136 &7816699814293861601
 CapsuleCollider:
   m_ObjectHideFlags: 0
