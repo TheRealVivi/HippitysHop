@@ -25,4 +25,9 @@ public class Player : Character
     public List<bool> inventory;
     public bool[] inventoryID;
     public int orbsInPossession;
+
+    public void Inactive(bool active)
+    {
+        this.enabled = active;
+    }
 }
