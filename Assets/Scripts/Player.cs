@@ -18,7 +18,9 @@ public class Player : Character
             instance = this;
         }
         inventory = Item.Items.items;
+        inventoryID = Item.Items.orbIDs;
     }
 
     public List<bool> inventory;
+    public bool[] inventoryID;
 }
