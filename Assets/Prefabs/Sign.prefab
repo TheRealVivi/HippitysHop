@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3716866476808293024}
   - component: {fileID: 7643410684290505812}
   - component: {fileID: 4737143309431871072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4476957976457125823}
   - component: {fileID: 7076367719486940260}
   - component: {fileID: 7554422559896936457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2770349318630459134}
   - component: {fileID: 2916282467498807650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,6 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2531cf70e115f914d871295ca4153396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    name: 
+    sentances: []
+  usableDistance: 2
 --- !u!1 &6326616365494440531
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +238,7 @@ GameObject:
   - component: {fileID: 3974180345930738122}
   - component: {fileID: 3724790291224035913}
   - component: {fileID: 8389329240285974784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Post
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +330,7 @@ GameObject:
   - component: {fileID: 8338341390818306236}
   - component: {fileID: 219299410595951921}
   - component: {fileID: 2455940459377537187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
