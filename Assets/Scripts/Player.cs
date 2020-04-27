@@ -25,9 +25,24 @@ public class Player : Character
     public List<bool> inventory;
     public bool[] inventoryID;
     public int orbsInPossession;
+    public PlayerMovement movement;
+    bool jump;
 
     public void Inactive(bool active)
     {
         this.enabled = active;
+    }
+
+    void LateUpdate()
+    {
+        float x = Input.GetAxis("Horizontal") * walkSpeed;
+        float z = Input.GetAxis("Vertical") * walkSpeed;
+
+        if (Input.GetButtonDown("Jump"))
+            jump = true;
+
+        movement.Move(x, z, jump);
+
+        jump = false;
     }
 }

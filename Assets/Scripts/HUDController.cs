@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HUDController : MonoBehaviour
 {
     public Text orbCount;
+    public Text hudText;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +17,9 @@ public class HUDController : MonoBehaviour
     void Update()
     {
         orbCount.text = Player.Instance.orbsInPossession.ToString() + " / 32";
+        if (SignInteraction.usable)
+            hudText.text = "PRESS E TO INTERACT";
+        else
+            hudText.text = " ";
     }
 }

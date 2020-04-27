@@ -210,7 +210,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deaba20c49ecd74798eea5946eddd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
+  walkSpeed: 12
+  sprintSpeed: 0
   inventory: 
+  inventoryID: 
+  orbsInPossession: 0
+  movement: {fileID: 3543223975723908836}
 --- !u!1 &3543223976245931384
 GameObject:
   m_ObjectHideFlags: 0
