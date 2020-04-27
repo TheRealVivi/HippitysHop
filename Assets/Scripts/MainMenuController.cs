@@ -13,7 +13,7 @@ public class MainMenuController : MonoBehaviour
     public void PlayPressed()
     {
         //Debug.Log("Play called");
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("HubScene");
         //if (Player.Instance != null)
         //{
         //    Door door = gameObject.AddComponent<Door>() as Door;

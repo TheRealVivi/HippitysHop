@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7622008833145278070}
   - component: {fileID: 3218580084414788043}
   - component: {fileID: 1290837587874136982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 6773248294746372635}
   - component: {fileID: 6502716037098901892}
   - component: {fileID: 1168365732005860059}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Orb 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 527301302877542977}
   - component: {fileID: 6736753750563275546}
   - component: {fileID: 1643268283617408663}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 2930833215292911588}
   - component: {fileID: 6319650397564059088}
   - component: {fileID: 765154821312386280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 1882375278449208086}
   - component: {fileID: 3057565212146062365}
   - component: {fileID: 183617726892816216}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
