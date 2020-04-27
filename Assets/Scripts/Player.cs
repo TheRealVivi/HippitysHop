@@ -19,8 +19,10 @@ public class Player : Character
         }
         inventory = Item.Items.items;
         inventoryID = Item.Items.orbIDs;
+        orbsInPossession = 0;
     }
 
     public List<bool> inventory;
     public bool[] inventoryID;
+    public int orbsInPossession;
 }

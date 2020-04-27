@@ -28,6 +28,8 @@ public class Item : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (itemNumber == 0)
+                Player.Instance.orbsInPossession++;
             Player.Instance.inventory[itemNumber] = true;
             Player.Instance.inventoryID[ID] = true;
             item.SetActive(false);
