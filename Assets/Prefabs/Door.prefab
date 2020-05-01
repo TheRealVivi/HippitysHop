@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950997009a00f614489befe4fb8a61fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notEnoughOrbs: {fileID: 0}
+  notEnoughOrbs: {fileID: 8300000, guid: 0f05cae07462e4f4498e746fb0630c8b, type: 3}
 --- !u!82 &6251283843947409392
 AudioSource:
   m_ObjectHideFlags: 0
