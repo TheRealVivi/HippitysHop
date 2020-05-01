@@ -18,12 +18,12 @@ public class Player : Character
             instance = this;
         }
         inventory = Item.Items.items;
-        inventoryID = Item.Items.orbIDs;
+        //inventoryID = Item.Items.orbIDs;
         orbsInPossession = 0;
     }
 
     public List<bool> inventory;
-    public bool[] inventoryID;
+    //public bool[] inventoryID;
     public int orbsInPossession;
     public PlayerMovement movement;
     bool jump;

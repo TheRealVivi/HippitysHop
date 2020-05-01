@@ -6,7 +6,7 @@ public class Item : MonoBehaviour
 {
     public GameObject item;
     public int itemNumber;
-    public int ID;
+    //public int ID;
     public AudioClip pickUpSound;
 
     public class Items
@@ -14,12 +14,12 @@ public class Item : MonoBehaviour
         static bool orb = false;
         static bool key = false;
         public static List<bool> items = new List<bool>() { orb, key };
-        public static bool[] orbIDs = new bool[32];
+        //public static bool[] orbIDs = new bool[32];
     }
     // Start is called before the first frame update
     void Start()
     {
-        if (Player.Instance.inventory[itemNumber] && Player.Instance.inventoryID[ID])
+        if (Player.Instance.inventory[itemNumber])
             item.SetActive(false);
         else
             item.SetActive(true);
@@ -42,7 +42,7 @@ public class Item : MonoBehaviour
         if (itemNumber == 0)
             Player.Instance.orbsInPossession++;
         Player.Instance.inventory[itemNumber] = true;
-        Player.Instance.inventoryID[ID] = true;
+        //Player.Instance.inventoryID[ID] = true;
         item.SetActive(false);
     }
 }
