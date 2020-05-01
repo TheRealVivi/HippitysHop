@@ -88,7 +88,7 @@ SphereCollider:
   m_GameObject: {fileID: 1113738074855830892}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.24003519
   m_Center: {x: 0.00000022877585, y: 0.015031782, z: 0}
@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 6773248294746372635}
   - component: {fileID: 6502716037098901892}
   - component: {fileID: 1168365732005860059}
+  - component: {fileID: 1153170757389152290}
   m_Layer: 9
   m_Name: Orb 1
   m_TagString: Untagged
@@ -140,6 +141,7 @@ MonoBehaviour:
   item: {fileID: 4699621786274207090}
   itemNumber: 0
   ID: 0
+  pickUpSound: {fileID: 8300000, guid: 91cbcf163311af845a758d9591045ee9, type: 3}
 --- !u!65 &1168365732005860059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -153,6 +155,102 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7231616, y: 0.6149819, z: 0.77898777}
   m_Center: {x: 0.8158563, y: -0.26938593, z: 0.31781858}
+--- !u!82 &1153170757389152290
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4699621786274207090}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5958519418877784980
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +339,7 @@ BoxCollider:
   m_GameObject: {fileID: 5958519418877784980}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1, z: 1}
   m_Center: {x: 0.0000002384186, y: -0.00000023841858, z: 0}
@@ -333,7 +431,7 @@ BoxCollider:
   m_GameObject: {fileID: 7934580894600017282}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1, z: 1}
   m_Center: {x: 0.0000002384186, y: -0.00000023841858, z: 0}
@@ -435,6 +533,7 @@ MonoBehaviour:
   item: {fileID: 8472725695176578123}
   itemNumber: 0
   ID: 0
+  pickUpSound: {fileID: 0}
 --- !u!65 &183617726892816216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -444,7 +543,7 @@ BoxCollider:
   m_GameObject: {fileID: 8472725695176578123}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: -0.0000004172325}

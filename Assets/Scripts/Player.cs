@@ -35,8 +35,18 @@ public class Player : Character
 
     void LateUpdate()
     {
-        float x = Input.GetAxis("Horizontal") * walkSpeed;
-        float z = Input.GetAxis("Vertical") * walkSpeed;
+        float x;
+        float z;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            x = Input.GetAxis("Horizontal") * sprintSpeed;
+            z = Input.GetAxis("Vertical") * sprintSpeed;
+        }
+        else 
+        {
+            x = Input.GetAxis("Horizontal") * walkSpeed;
+            z = Input.GetAxis("Vertical") * walkSpeed;
+        }
 
         if (Input.GetButtonDown("Jump"))
             jump = true;

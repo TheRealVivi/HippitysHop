@@ -13,11 +13,14 @@ public class SignInteraction : MonoBehaviour
     {
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         direction = this.transform.position - Player.Instance.transform.position;
         usable = direction.magnitude < usableDistance;
+    }
+    // Update is called once per frame
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.E) && direction.magnitude < usableDistance) 
         {
             Speak();
