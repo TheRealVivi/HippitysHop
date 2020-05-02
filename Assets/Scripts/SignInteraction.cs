@@ -5,7 +5,7 @@ using UnityEngine;
 public class SignInteraction : MonoBehaviour
 {
     public Dialog dialog;
-    public float usableDistance = 2f;
+    public float usableDistance = 4f;
     public static bool usable;
     Vector3 direction;
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class SignInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && direction.magnitude < usableDistance) 
+        if (Input.GetKeyDown(KeyCode.E) && direction.sqrMagnitude < usableDistance) 
         {
             Speak();
         }
