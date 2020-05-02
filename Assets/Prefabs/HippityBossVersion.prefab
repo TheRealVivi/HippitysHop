@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 3596639864082544596}
   - component: {fileID: 2149855640012081117}
   - component: {fileID: 5351765017713027658}
+  - component: {fileID: -676551777516634628}
   m_Layer: 0
   m_Name: HippityBossVersion
   m_TagString: Untagged
@@ -297,6 +298,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &-676551777516634628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149855640012081116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e18ba9165dcb648851f4804242f2fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  walkSpeed: 12
+  sprintSpeed: 20
 --- !u!1 &2164575279156945355
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,21 +22,23 @@ public class MainMenuController : MonoBehaviour
 
     public void NewGamePressed() 
     {
-        SceneManager.LoadScene("HubScene");
         if (Player.Instance != null)
         {
             Player.Instance.NewGame();
         }
-        Player.Instance.currentLevel = "HubScene";
+
         Cursor.lockState = CursorLockMode.Locked;
 
         CreditsManager.gameFinished = false;
+        SceneManager.LoadScene("HubScene");
     }
 
     public void PlayPressed()
     {
         //Debug.Log("Play called");
-        SceneManager.LoadScene(Player.Instance.currentLevel);
+        Door door = gameObject.AddComponent<Door>() as Door;
+
+        SceneManager.LoadScene(door.scenes[Player.Instance.currentLevelInt]);
         Cursor.lockState = CursorLockMode.Locked;
         //if (Player.Instance != null)
         //{

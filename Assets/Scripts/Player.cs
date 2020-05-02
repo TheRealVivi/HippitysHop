@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
@@ -18,15 +19,16 @@ public class Player : Character
             instance = this;
         }
         inventory = Item.Items.items;
-        //inventoryID = Item.Items.orbIDs;
+        inventoryID = Item.Items.orbIDs;
         orbsInPossession = 0;
     }
 
     public List<bool> inventory;
-    //public bool[] inventoryID;
+    public bool[] inventoryID;
     public int orbsInPossession;
     public PlayerMovement movement;
     public string currentLevel;
+    public int currentLevelInt;
     bool jump;
 
     public void Inactive(bool active)
@@ -59,7 +61,7 @@ public class Player : Character
 
     public void NewGame() 
     {
-        currentLevel = "HubScene";
+        currentLevelInt = 0;
         orbsInPossession = 0;
         inventory[0] = false;
     }
