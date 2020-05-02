@@ -2,18 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
-    public void TestPressed() 
+    public Button continueButton;
+    private void Start()
     {
-        SceneManager.LoadScene("SampleScene");
+        if (Player.Instance == null)
+            continueButton.interactable = false;
+        else
+            continueButton.interactable = true;
+    }
+
+    public void CreditsPressed() 
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void NewGamePressed() 
+    {
+        SceneManager.LoadScene("HubScene");
+        if (Player.Instance != null)
+        {
+            Player.Instance.NewGame();
+        }
+        Player.Instance.currentLevel = "HubScene";
+        Cursor.lockState = CursorLockMode.Locked;
+
+        CreditsManager.gameFinished = false;
     }
 
     public void PlayPressed()
     {
         //Debug.Log("Play called");
-        SceneManager.LoadScene("HubScene");
+        SceneManager.LoadScene(Player.Instance.currentLevel);
+        Cursor.lockState = CursorLockMode.Locked;
         //if (Player.Instance != null)
         //{
         //    Door door = gameObject.AddComponent<Door>() as Door;

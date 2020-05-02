@@ -25,6 +25,7 @@ public class EnterDoor : MonoBehaviour
         {
             if (Player.Instance.orbsInPossession >= 10)
             {
+                Player.Instance.currentLevel = "Level01";
                 SceneManager.LoadScene("Level01");
                 Player.Instance.transform.position = new Vector3(.0245f, 2.1f, 10.37f);
             }

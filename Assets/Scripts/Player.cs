@@ -26,6 +26,7 @@ public class Player : Character
     //public bool[] inventoryID;
     public int orbsInPossession;
     public PlayerMovement movement;
+    public string currentLevel;
     bool jump;
 
     public void Inactive(bool active)
@@ -54,5 +55,12 @@ public class Player : Character
         movement.Move(x, z, jump);
 
         jump = false;
+    }
+
+    public void NewGame() 
+    {
+        currentLevel = "HubScene";
+        orbsInPossession = 0;
+        inventory[0] = false;
     }
 }

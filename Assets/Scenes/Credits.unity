@@ -361,7 +361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -187.45001, y: -4.100006}
+  m_AnchoredPosition: {x: -187.45001, y: -4.0999756}
   m_SizeDelta: {x: -442.8, y: -180.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211529027
@@ -511,7 +511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00014568453, y: -80.23007}
+  m_AnchoredPosition: {x: -0.00012207031, y: -80.2301}
   m_SizeDelta: {x: -18.8, y: 160.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407874491
@@ -996,7 +996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.8}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5999908, y: -1042}
+  m_AnchoredPosition: {x: 1.5999756, y: -1042}
   m_SizeDelta: {x: -9.2, y: 2084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678842578
@@ -1184,8 +1184,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2068037989}
   m_HandleRect: {fileID: 2068037988}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.12647519
+  m_Value: 1
+  m_Size: 0.12648167
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1421,7 +1421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 173.29999, y: -4.0992126}
+  m_AnchoredPosition: {x: 173.29999, y: -4.099243}
   m_SizeDelta: {x: -488.1, y: -180.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135107877
@@ -1469,8 +1469,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1148550215}
-  - component: {fileID: 1148550214}
   - component: {fileID: 1148550216}
+  - component: {fileID: 1148550214}
   m_Layer: 0
   m_Name: CreditsManager
   m_TagString: Untagged
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148550213}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e38158d7dece44cb5a69add49c1c31, type: 3}
+  m_Script: {fileID: 11500000, guid: c63cffc2e19fa9f48856dd6423fe108e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1148550215
@@ -1514,7 +1514,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2aae59303761363448fd7f19d04d6252, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 96e299810db273341ae05b866a555a4d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1637,7 +1637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00045776367}
+  m_AnchoredPosition: {x: 0, y: -0.0004272461}
   m_SizeDelta: {x: 0.7000122, y: 0.8699951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166552364
@@ -2264,8 +2264,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 594832423}
   m_HandleRect: {fileID: 594832422}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.62686706
+  m_Value: 1.0000006
+  m_Size: 0.6268794
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

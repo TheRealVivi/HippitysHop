@@ -53,6 +53,7 @@ public class PauseMenuController : MonoBehaviour
     public void MainMenuPressed()
     {
         //Debug.Log("MainMenu called");
+        Player.Instance.currentLevel = SceneManager.GetActiveScene().ToString();
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
         Player.Instance.Inactive(false);
