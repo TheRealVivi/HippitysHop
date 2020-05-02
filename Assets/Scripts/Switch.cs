@@ -6,6 +6,7 @@ public class Switch : MonoBehaviour
 {
     public bool activated;
     public float usableDistance = 9f;
+    public AudioClip activatedSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,9 @@ public class Switch : MonoBehaviour
         if (Input.GetKey(KeyCode.E) && direction.sqrMagnitude < usableDistance) 
         {
             activated = true;
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.clip = activatedSound;
+            audio.Play();
         }
     }
 }

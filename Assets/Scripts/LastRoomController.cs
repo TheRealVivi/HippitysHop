@@ -9,6 +9,8 @@ public class LastRoomController : MonoBehaviour
     public GameObject firstOrb;
     public GameObject secondOrb;
     public GameObject thirdOrb;
+    public GameObject sparks;
+    public GameObject sparks2;
     public float usableDistance = 9f;
     public float currentDistance;
     bool tenOrbUsed;
@@ -21,6 +23,8 @@ public class LastRoomController : MonoBehaviour
         firstOrb.SetActive(false);
         secondOrb.SetActive(false);
         thirdOrb.SetActive(false);
+        sparks.SetActive(false);
+        sparks2.SetActive(false);
         tenOrbUsed = false;
         threeOrbUsed = false;
     }
@@ -36,6 +40,7 @@ public class LastRoomController : MonoBehaviour
             tenOrbCollection.SetActive(true);
             Player.Instance.orbsInPossession -= 10;
             tenOrbUsed = true;
+            sparks.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.E) && threeorbdirection.sqrMagnitude < usableDistance && tenOrbUsed && !threeOrbUsed) 
@@ -43,6 +48,7 @@ public class LastRoomController : MonoBehaviour
             firstOrb.SetActive(Player.Instance.orbsInPossession >= 1);
             secondOrb.SetActive(Player.Instance.orbsInPossession >= 2);
             thirdOrb.SetActive(Player.Instance.orbsInPossession >= 3);
+            sparks2.SetActive(Player.Instance.orbsInPossession >= 1);
             Player.Instance.orbsInPossession = 0;
             threeOrbUsed = true;
         }
