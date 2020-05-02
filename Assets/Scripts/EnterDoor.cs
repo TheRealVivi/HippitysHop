@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnterDoor : MonoBehaviour
 {
     public AudioClip notEnoughOrbs;
+    public int goingToIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +24,11 @@ public class EnterDoor : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
-            if (Player.Instance.orbsInPossession >= 10)
+            if (Player.Instance.orbsInPossession >= 10 || LastRoomController.threeOrbUsed)
             {
-                Player.Instance.currentLevel = "Level01";
-                SceneManager.LoadScene("Level01");
-                Player.Instance.transform.position = new Vector3(.0245f, 2.1f, 10.37f);
+                Door door = gameObject.AddComponent<Door>() as Door;
+                door.goingToIndex = goingToIndex;
+                door.Open(other, door.scenes[door.goingToIndex], Door.Coordinates.cooridnates[door.goingToIndex]);
             }
             else 
             {

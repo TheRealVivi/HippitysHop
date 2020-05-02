@@ -11,10 +11,11 @@ public class LastRoomController : MonoBehaviour
     public GameObject thirdOrb;
     public GameObject sparks;
     public GameObject sparks2;
+    public GameObject door;
     public float usableDistance = 9f;
     public float currentDistance;
     bool tenOrbUsed;
-    bool threeOrbUsed;
+    public static bool threeOrbUsed;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class LastRoomController : MonoBehaviour
         thirdOrb.SetActive(false);
         sparks.SetActive(false);
         sparks2.SetActive(false);
+        door.SetActive(false);
         tenOrbUsed = false;
         threeOrbUsed = false;
     }
@@ -49,6 +51,8 @@ public class LastRoomController : MonoBehaviour
             secondOrb.SetActive(Player.Instance.orbsInPossession >= 2);
             thirdOrb.SetActive(Player.Instance.orbsInPossession >= 3);
             sparks2.SetActive(Player.Instance.orbsInPossession >= 1);
+
+            door.SetActive(true);
             Player.Instance.orbsInPossession = 0;
             threeOrbUsed = true;
         }

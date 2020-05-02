@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
     Collider collider;
     public List<string> scenes = new List<string>()
     {
-        "HubScene", "Level01", "FinalLevel", "House", "Credits"
+        "HubScene", "Level01", "FinalLevel", "Credits"
     };
     public class Coordinates
     {
