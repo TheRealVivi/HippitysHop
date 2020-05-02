@@ -35,6 +35,7 @@ public class PauseMenuController : MonoBehaviour
         //Debug.Log("Resume called");
         pauseMenu.SetActive(false);
         Player.Instance.Inactive(true);
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
         gameIsPaused = false;
     }
@@ -44,6 +45,7 @@ public class PauseMenuController : MonoBehaviour
         //Debug.Log("Pause called");
         pauseMenu.SetActive(true);
         Player.Instance.Inactive(false);
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f;
         gameIsPaused = true;
     }
