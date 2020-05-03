@@ -58,6 +58,7 @@ public class FinalLevelController : MonoBehaviour
         audio.Play();
         yield return new WaitForSeconds(10f);
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene("Credits");
     }
 
