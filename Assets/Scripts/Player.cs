@@ -29,6 +29,7 @@ public class Player : Character
     public PlayerMovement movement;
     public string currentLevel;
     public int currentLevelInt;
+    public AudioClip gettingHit;
     bool jump;
 
     public void Inactive(bool active)
@@ -73,6 +74,9 @@ public class Player : Character
 
     public void TakeDamage(int damage) 
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = gettingHit;
+        audio.Play();
         hp -= damage;
         if (hp <= 0) 
         {

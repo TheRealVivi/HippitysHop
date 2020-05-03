@@ -7,6 +7,7 @@ TagManager:
   - Shootable
   - ai
   - sign
+  - Fire
   layers:
   - Default
   - TransparentFX
