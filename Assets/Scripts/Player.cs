@@ -82,6 +82,7 @@ public class Player : Character
         {
             Inactive(false);
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("GameOverScene");
         }
     }

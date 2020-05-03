@@ -9,15 +9,21 @@ public class FirstLevelController : MonoBehaviour
     public GameObject mazeMob;
     bool firstTriggered;
     bool mazeTriggered;
+    bool beginningTriggered;
     private void Start()
     {
-        FindObjectOfType<DialogManager>().StartDialog(this.tutorial);
+        beginningTriggered = false;
         firstTriggered = false;
         mazeTriggered = false;
     }
     // Update is called once per frame
     void Update()
     {
+        if (!beginningTriggered) 
+        {
+            beginningTriggered = true;
+            Speak();
+        }
         if (Player.Instance.orbsInPossession >= 4 && !firstTriggered) 
         {
             firstTriggered = true;
@@ -28,5 +34,10 @@ public class FirstLevelController : MonoBehaviour
             mazeTriggered = true;
             mazeMob.SetActive(false);
         }
+    }
+
+    public void Speak()
+    {
+        FindObjectOfType<DialogManager>().StartDialog(this.tutorial);
     }
 }

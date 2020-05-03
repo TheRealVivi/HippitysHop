@@ -28,6 +28,7 @@ public class MainMenuController : MonoBehaviour
         }
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         CreditsManager.gameFinished = false;
         SceneManager.LoadScene("HubScene");
@@ -48,6 +49,7 @@ public class MainMenuController : MonoBehaviour
             SceneManager.LoadScene(door.scenes[Player.Instance.currentLevelInt]);
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         //if (Player.Instance != null)
         //{
         //    Door door = gameObject.AddComponent<Door>() as Door;
