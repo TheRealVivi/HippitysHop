@@ -545,34 +545,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Kyle McLain Kane
-
-
-    Maria Jose Molina Sanchez O''Dell
-
-
-    Michael Scott
-
-
-    Nathan Lehenbauer
-
-
-    Tim Backus
-
-
-    Jamshid Aziz
-
-
-    Norman Chau
-
-
-    Christopher Bradford
-
-
-    Michael Ruiz
-
-
-    Ivan Delgado'
+  m_Text: 
 --- !u!222 &407874492
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1185,7 +1158,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2068037988}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.12662062
+  m_Size: 0.12657015
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2277,8 +2250,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 594832423}
   m_HandleRect: {fileID: 594832422}
   m_Direction: 2
-  m_Value: 1.0000004
-  m_Size: 0.6271437
+  m_Value: 1.0000006
+  m_Size: 0.6270477
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
