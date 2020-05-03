@@ -17,7 +17,7 @@ public class AIController : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Player.Instance.transform.position), out hit, 500))
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Player.Instance.transform.position), out hit, 1000))
         {
             foreach (GameObject a in agents)
             {
