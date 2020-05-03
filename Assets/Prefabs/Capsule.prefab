@@ -1289,7 +1289,7 @@ GameObject:
   - component: {fileID: 4317514623088007542}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: sign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1385,7 +1385,6 @@ MonoBehaviour:
     - There is about 10 of them lying around this land, they look like the one in
       the corner of this room.
     - Good luck, and stay hoppity!
-  usableDistance: 2
 --- !u!136 &7816699814293861601
 CapsuleCollider:
   m_ObjectHideFlags: 0

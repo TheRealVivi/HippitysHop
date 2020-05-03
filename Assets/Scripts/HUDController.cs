@@ -17,9 +17,5 @@ public class HUDController : MonoBehaviour
     void Update()
     {
         orbCount.text = Player.Instance.orbsInPossession.ToString() + " / 13  (Need: 10)";
-        if (SignInteraction.usable)
-            hudText.text = "PRESS E TO INTERACT";
-        else
-            hudText.text = " ";
     }
 }
