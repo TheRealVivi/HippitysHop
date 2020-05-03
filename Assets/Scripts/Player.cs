@@ -61,6 +61,7 @@ public class Player : Character
 
     public void NewGame() 
     {
+        hp = 100;
         currentLevelInt = 0;
         orbsInPossession = 0;
         inventory[0] = false;

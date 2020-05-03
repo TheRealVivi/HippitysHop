@@ -37,8 +37,16 @@ public class MainMenuController : MonoBehaviour
     {
         //Debug.Log("Play called");
         Door door = gameObject.AddComponent<Door>() as Door;
+        if (Player.Instance.hp <= 0) 
+        {
+            Player.Instance.hp = 100;
+            door.goingToIndex = Player.Instance.currentLevelInt;
+            Collider collider = Player.Instance.GetComponent<Collider>();
+            door.Open(collider, door.scenes[door.goingToIndex], Door.Coordinates.cooridnates[door.goingToIndex]);
+        }
+        else
+            SceneManager.LoadScene(door.scenes[Player.Instance.currentLevelInt]);
 
-        SceneManager.LoadScene(door.scenes[Player.Instance.currentLevelInt]);
         Cursor.lockState = CursorLockMode.Locked;
         //if (Player.Instance != null)
         //{
