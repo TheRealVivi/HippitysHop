@@ -849,15 +849,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2.5
-  m_Text: 'W - Jump            W (x2) - Double Jump
+  m_Text: 'WASD - MOVE PLAYER
 
-    A - Move left
+    SHIFT(HOLD WHILE MOVING) - SPRINT
 
-    D - Move right
+    E - TALK, READ, INTERACT WITH OBJECTS
 
-    S(hold) - Fall through platform
+    SPACE - JUMP
 
-    Arrow Keys - Shoot gun (if aquired)'
+    MOUSE - LOOK AROUND'
 --- !u!1 &3302325499579133099
 GameObject:
   m_ObjectHideFlags: 0
