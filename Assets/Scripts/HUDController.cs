@@ -8,11 +8,6 @@ public class HUDController : MonoBehaviour
     public Text orbCount;
     public Text hudText;
     public Text hpCount;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

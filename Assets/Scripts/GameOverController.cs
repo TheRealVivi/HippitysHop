@@ -13,6 +13,7 @@ public class GameOverController : MonoBehaviour
         Collider collider = Player.Instance.GetComponent<Collider>();
         door.Open(collider, door.scenes[door.goingToIndex], Door.Coordinates.cooridnates[door.goingToIndex]);
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void MainMenuPressed() 

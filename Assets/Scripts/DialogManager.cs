@@ -34,7 +34,7 @@ public class DialogManager : MonoBehaviour
         DialogBox.SetActive(true);
 
         Player.Instance.Inactive(false);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         nameText.text = dialog.name;
 
         this.sentances.Clear();
@@ -65,7 +65,7 @@ public class DialogManager : MonoBehaviour
     public void EndDialogue() 
     {
         Player.Instance.Inactive(true);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         //Debug.Log("End conversation");
         HUD.SetActive(true);
         DialogBox.SetActive(false);

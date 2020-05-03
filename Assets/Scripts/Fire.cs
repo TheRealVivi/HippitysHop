@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
-    private void Start()
-    {
-    }
     private void OnTriggerEnter(Collider collision)
     {
         Player player = collision.GetComponent<Player>();

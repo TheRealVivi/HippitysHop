@@ -63,7 +63,7 @@ public class FinalLevelController : MonoBehaviour
 
     public void Speak(Dialog dialog)
     {
-        FindObjectOfType<DialogManager>().StartDialog(this.dialog);
+        FindObjectOfType<DialogManager>().StartDialog(dialog);
     }
 
 }
