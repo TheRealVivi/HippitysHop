@@ -11,8 +11,7 @@ public class CreditsManager : MonoBehaviour
         if (gameFinished)
         {
             Player.Instance.inventory[0] = false;
-            Player.Instance.inventory[1] = false;
-            Destroy(GameObject.Find("player"));
+            Destroy(GameObject.Find("FirstPersonPlayer"));
         }
         SceneManager.LoadScene("MainMenu");
     }

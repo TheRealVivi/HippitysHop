@@ -170,9 +170,10 @@ GameObject:
   - component: {fileID: 2149855640012081117}
   - component: {fileID: 5351765017713027658}
   - component: {fileID: -676551777516634628}
+  - component: {fileID: 3408153647354779437}
   m_Layer: 0
   m_Name: HippityBossVersion
-  m_TagString: Untagged
+  m_TagString: ai
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +254,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2149855640012081116}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2531cf70e115f914d871295ca4153396, type: 3}
   m_Name: 
@@ -313,6 +314,31 @@ MonoBehaviour:
   hp: 100
   walkSpeed: 12
   sprintSpeed: 20
+  agent: {fileID: 0}
+  coolDown: 0.1
+  damage: 10
+--- !u!195 &3408153647354779437
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149855640012081116}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.50000006
+  m_Speed: 10
+  m_Acceleration: 15
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &2164575279156945355
 GameObject:
   m_ObjectHideFlags: 0

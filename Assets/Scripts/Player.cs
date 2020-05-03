@@ -64,5 +64,20 @@ public class Player : Character
         currentLevelInt = 0;
         orbsInPossession = 0;
         inventory[0] = false;
+        Collider collider = GetComponent<Collider>();
+        Door door = gameObject.AddComponent<Door>() as Door;
+        door.goingToIndex = currentLevelInt;
+        door.Open(collider, door.scenes[door.goingToIndex], Door.Coordinates.cooridnates[door.goingToIndex]);
+    }
+
+    public void TakeDamage(int damage) 
+    {
+        hp -= damage;
+        if (hp <= 0) 
+        {
+            Inactive(false);
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("GameOverScene");
+        }
     }
 }

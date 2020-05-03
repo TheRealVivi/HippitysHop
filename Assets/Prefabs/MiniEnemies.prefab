@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 955789696696694019}
   - component: {fileID: 955789696696694016}
   - component: {fileID: 955789696696694017}
-  - component: {fileID: 2413827268657399055}
   - component: {fileID: 955789696696694022}
   - component: {fileID: 6544642955913353361}
+  - component: {fileID: 2367515215314008354}
+  - component: {fileID: 455730833654712125}
   m_Layer: 0
   m_Name: MiniEnemies
-  m_TagString: Untagged
+  m_TagString: ai
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,29 +91,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &2413827268657399055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955789696696694023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2531cf70e115f914d871295ca4153396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog:
-    name: Hippity
-    sentances:
-    - HI! MY NAMES HIPPITY!
-    - LETS GO HOPPITY!
-    - I NEED YOU TO FIND ALL OF MY GRANDFATHERS LOST ORBS!
-    - They mean a lot to me...
-    - There is about 10 of them lying around this land, they look like the one in
-      the corner of this room.
-    - Good luck, and stay hoppity!
-  usableDistance: 2
 --- !u!136 &955789696696694022
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -123,7 +101,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 1.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -143,6 +121,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!195 &2367515215314008354
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955789696696694023}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.49999997
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.9999999
+  m_BaseOffset: 0.99999994
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &455730833654712125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955789696696694023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066b87f0e32f6724a9bffc7dd9907251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  walkSpeed: 12
+  sprintSpeed: 20
+  agent: {fileID: 0}
+  coolDown: 0.1
+  damage: 10
 --- !u!1 &1052833258848523024
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +282,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: -0.23, z: -0.48}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0909996, y: 0.7329728, z: 0.38046503}
+  m_ConnectedAnchor: {x: 0.09099918, y: 0.7329728, z: 0.38046563}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -419,7 +437,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0.3, z: 0.28}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0909996, y: -0.75779057, z: -0.42627144}
+  m_ConnectedAnchor: {x: 0.09099918, y: -0.7577905, z: -0.4262716}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -574,7 +592,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0880003, y: 1.921, z: 0.010000229}
+  m_ConnectedAnchor: {x: 0.08799904, y: 1.921, z: 0.00999996}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -729,7 +747,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0.38, z: -0.37}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0909996, y: -0.7358681, z: 0.38760853}
+  m_ConnectedAnchor: {x: 0.09099918, y: -0.7358681, z: 0.38760802}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -977,7 +995,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 1.12, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.041551743, y: -0.033291705, z: -0.3845001}
+  m_ConnectedAnchor: {x: 0.04155354, y: -0.03329192, z: -0.3845018}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1133,7 +1151,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: -1.08, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16283841, y: 0.01151065, z: 0.48571745}
+  m_ConnectedAnchor: {x: -0.16284174, y: 0.011510433, z: 0.48571572}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1289,7 +1307,7 @@ CharacterJoint:
   m_Anchor: {x: -0.37, y: 0.56, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.11409173, y: -0.43121195, z: 0.3685708}
+  m_ConnectedAnchor: {x: -0.11408975, y: -0.43121195, z: 0.36857343}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1444,7 +1462,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: -0.25, z: 0.49}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0909996, y: 0.7274922, z: -0.36872482}
+  m_ConnectedAnchor: {x: 0.09099918, y: 0.7274922, z: -0.36872444}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1692,7 +1710,7 @@ CharacterJoint:
   m_Anchor: {x: -0.37, y: 0.56, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.22356732, y: -0.46405515, z: 0.08393204}
+  m_ConnectedAnchor: {x: -0.2235714, y: -0.46405494, z: 0.083933674}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:

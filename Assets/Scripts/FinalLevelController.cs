@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FinalLevelController : MonoBehaviour
 {
+    public Dialog dialog;
     public AudioClip sadBossDeath;
     public AudioClip bossScreech;
     public AudioClip song2;
@@ -12,6 +13,7 @@ public class FinalLevelController : MonoBehaviour
     void Start()
     {
         Player.Instance.currentLevel = "FinalLevel";
+        FindObjectOfType<DialogManager>().StartDialog(this.dialog);
     }
 
     // Update is called once per frame
