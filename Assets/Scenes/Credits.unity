@@ -545,7 +545,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Kyle McLain Kane
+
+
+    Norman Chau
+
+
+    Michael Ruiz'
 --- !u!222 &407874492
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1004,34 +1010,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Developed by:\nKyle O'Dell\n\nStory written by:\nKyle O'Dell\n\n\nSoundtrack:\r\n\nMain
-    Menu Theme \u2013 Written and produced by Kyle O\u2019Dell\r\n\nGameover / credits
-    theme \u2013 Written and produced by Kyle O\u2019Dell\r\n\nFirst level theme \u2013
-    Written and produced by Kyle O\u2019Dell\r\n\nSecond level theme \u2013 Written
-    and produced by Kyle O\u2019Dell\r\n\nFinal level theme \u2013 Written and produced
-    by Kyle O\u2019Dell\r\n\r\n\nSounds:\r\n\nPlayer death sounds \u2013 recorded
-    by Kyle O\u2019Dell\r\n\nPlayer hit sounds \u2013 recorded by Kyle O\u2019Dell\n\nEnemy
-    death sounds \u2013 recorded by Kyle O\u2019Dell\r\n\nCaptain Cah\u2019s voice
-    \u2013 Kyle O\u2019Dell\n\r\nJumping Sound \u2013 recorded by Kyle O\u2019Dell\r\n\nGreen
-    Light Activation sound \u2013 recorded by Kyle O\u2019Dell\r\n\nRunning water
-    sound \u2013 recorded by Kyle O\u2019Dell\r\n\nGun shooting sound \u2013 recorded
-    by Kyle O\u2019Dell\r\n\nGaining health sound \u2013 recorded by Kyle O\u2019Dell\r\n\n\r\nArtwork:\r\n\nLittle
-    Shammer character \u2013 Kyle O\u2019Dell\r\n\nCaptain Cah character \u2013 Kyle
-    O\u2019Dell\r\n\nMelee enemy \u2013 Kyle O\u2019Dell\r\n\nExploding Enemy \u2013
-    Kyle O\u2019Dell\r\n\nBoss enemy \u2013 Kyle O\u2019Dell\r\n\nHearts \u2013 Kyle
-    O\u2019Dell\r\n\nMain Menu background \u2013 Kyle O\u2019Dell\r\n\nTutorial level
-    background \u2013 Kyle O\u2019Dell\r\n\nShip Scene background \u2013 Kyle O\u2019Dell\r\n\nFirst
-    level background \u2013 Kyle O\u2019Dell\r\n\nSecond level background \u2013 Kyle
-    O\u2019Dell\r\n\nFinal level background \u2013 Kyle O\u2019Dell\r\n\nRed platforms
-    \u2013 Kyle O\u2019Dell\r\n\nFlower platforms \u2013 Kyle O\u2019Dell\r\n\nYellow
-    platforms \u2013 Kyle O\u2019Dell\r\n\nShip Platforms \u2013 Kyle O\u2019Dell\r\n\nGround
-    \u2013 Kyle O\u2019Dell\r\n\nHouse \u2013 Kyle O\u2019Dell\r\n\nFireplace \u2013
-    Kyle O\u2019Dell\r\n\nGun \u2013 Kyle O\u2019Dell\r\n\nKey \u2013 Kyle O\u2019Dell\r\n\nKeyhole
-    \u2013 Kyle O\u2019Dell\r\n\nHUD inventory \u2013 Kyle O\u2019Dell\r\n\nProjectiles
-    \u2013 Kyle O\u2019Dell\r\n\n\nMechanics:\n\nScene transition mechanics - Kyle
-    O'Dell\n\nEnemy detect/follow player mechanics - Kyle O'Dell's Linear Algebra
-    skills\n\n\nInspiration / Guidance:\n\nHealth Bar mechanics inspired by: Brackeys\n\nhttps://www.youtube.com/watch?v=BLfNP4Sc_iA\n\n\n\nShooting/Movement
-    mechanics inspired by: Brackeys\n\nhttps://www.youtube.com/watch?v=dwcT-Dch0bA&t=220s\n\nhttps://www.youtube.com/watch?v=wkKsl1Mfp5M\n\n\n\nDialog
-    mechanics:\nBrackeys\n\nhttps://www.youtube.com/watch?v=_nRzoTzeyxU&t=593s\n\n\n\nPause
+    Menu Theme \u2013 Written and produced by Kyle O\u2019Dell\r\n\nCredits theme
+    \u2013 Written and produced by Kyle O\u2019Dell\r\n\nFirst level theme \u2013
+    Written and produced by Kyle O\u2019Dell\r\n\nSecond level theme / GameOver track
+    \u2013 Written and produced by Kyle O\u2019Dell\r\n\nFinal level theme \u2013
+    Written and produced by Kyle O\u2019Dell\r\n\r\n\nSounds:\r\n\nPlayer hit sounds
+    \u2013 recorded by Kyle O\u2019Dell\r\n\nBoss death sounds \u2013 recorded by
+    Kyle O\u2019Dell\r\n\nTorch Activation sound \u2013 recorded by Kyle O\u2019Dell\r\n\nWaterfall
+    sound \u2013 recorded by Kyle O\u2019Dell\r\n\nPicking up orb sound \u2013 recorded
+    by Kyle O\u2019Dell\r\n\n\r\n3D Models:\r\n\nHouse \u2013 Made by Kyle O\u2019Dell
+    using Unity\r\n\nSign \u2013 Made by Kyle O\u2019Dell using Unity\r\n\nOrbs \u2013
+    Made by Kyle O\u2019Dell using Unity\r\n\nHippity \u2013 Made by Kyle O\u2019Dell
+    using Unity\r\n\nMini-Enemies \u2013 Made by Kyle O\u2019Dell using Unity\r\n\n\r\n\n\n2D
+    Artwork:\r\n\nMain Menu background \u2013 Kyle O\u2019Dell\r\n\nGrass texture
+    for terrain \u2013 Kyle O\u2019Dell\r\n\n\nMechanics:\n\nScene transition mechanics
+    - Kyle O'Dell\n\n\nInspiration / Guidance:\n\n\n\nDialog mechanics:\nBrackeys\n\nhttps://www.youtube.com/watch?v=_nRzoTzeyxU&t=593s\n\n\n\nPause
     menu inspired by:\nBrackeys\n\nhttps://www.youtube.com/watch?v=JivuXdrIHK0&t=458s\n"
 --- !u!222 &678842579
 CanvasRenderer:
