@@ -1025,7 +1025,8 @@ MonoBehaviour:
     Artwork:\r\n\nMain Menu background \u2013 Kyle O\u2019Dell\r\n\nGrass texture
     for terrain \u2013 Kyle O\u2019Dell\r\n\n\nMechanics:\n\nScene transition mechanics
     - Kyle O'Dell\n\n\nInspiration / Guidance:\n\n\n\nDialog mechanics:\nBrackeys\n\nhttps://www.youtube.com/watch?v=_nRzoTzeyxU&t=593s\n\n\n\nPause
-    menu inspired by:\nBrackeys\n\nhttps://www.youtube.com/watch?v=JivuXdrIHK0&t=458s\n"
+    menu inspired by:\nBrackeys\n\nhttps://www.youtube.com/watch?v=JivuXdrIHK0&t=458s\n\n\nFPS
+    Controller inspired by:\nBrackeys\n\nhttps://www.youtube.com/watch?v=_QajrabyTJc&t=879s"
 --- !u!222 &678842579
 CanvasRenderer:
   m_ObjectHideFlags: 0
