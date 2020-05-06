@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2792285119
+    locked: 0
   - name: Fire
     uniqueID: 3804908061
     locked: 0
