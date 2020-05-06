@@ -8,6 +8,8 @@ Bibliography is also included in GDD on last pages.
 
 CS583 Spring 2020 3D game
 
+NOTE: OPTIMIZED FOR WINDOWS AND LINUX: DUE TO GAME HAVING 16:9 ASPECT RATIO, MAC USERS MAY ENCOUNTER ASPECT RATIO ISSUES.
+
 User can access how to play from the settings of the game.
 
 How to play:
