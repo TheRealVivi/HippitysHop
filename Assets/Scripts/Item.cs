@@ -16,14 +16,6 @@ public class Item : MonoBehaviour
         public static List<bool> items = new List<bool>() { orb, key };
         public static bool[] orbIDs = new bool[13];
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (Player.Instance.inventoryID[ID]) 
-            item.SetActive(false);
-        else
-            item.SetActive(true);
-    }
 
     private void OnTriggerEnter(Collider other)
     {

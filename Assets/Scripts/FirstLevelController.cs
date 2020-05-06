@@ -34,6 +34,11 @@ public class FirstLevelController : MonoBehaviour
             mazeTriggered = true;
             mazeMob.SetActive(false);
         }
+        if (Player.Instance.hp <= 0) 
+        {
+            Player.Instance.orbsInPossession = 0;
+            Player.Instance.inventory[0] = false;
+        }
     }
 
     public void Speak()
