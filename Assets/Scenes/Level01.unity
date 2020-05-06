@@ -7898,9 +7898,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0be7d347cfb43e94e9bf98b2939c9a02, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 1
+  m_Pitch: -1
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9757,6 +9757,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5584052404297743756, guid: 64505db09b405264aa4429f76ccfd1a0,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64505db09b405264aa4429f76ccfd1a0, type: 3}
 --- !u!1 &2040008111
@@ -10998,7 +11003,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: -0.23, z: -0.48}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.091003366, y: 0.7329726, z: 0.38046557}
+  m_ConnectedAnchor: {x: 0.091003366, y: 0.7329726, z: 0.3804651}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -11715,7 +11720,7 @@ CharacterJoint:
   m_Anchor: {x: -0.37, y: 0.56, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.22360885, y: -0.46405473, z: 0.08393008}
+  m_ConnectedAnchor: {x: -0.22360885, y: -0.46405473, z: 0.08393182}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -13846,7 +13851,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 1.12, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.041552015, y: -0.03329127, z: -0.3845003}
+  m_ConnectedAnchor: {x: 0.041552015, y: -0.03329127, z: -0.38449857}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -13960,6 +13965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8986930364850902686}
+  fourOrbs: 0
+  tenOrbs: 0
 --- !u!135 &7120451620538229333
 SphereCollider:
   m_ObjectHideFlags: 0

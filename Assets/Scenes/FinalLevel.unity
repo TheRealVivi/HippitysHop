@@ -3072,7 +3072,7 @@ MonoBehaviour:
     - Why do I feel so defeated?
     - '...'
   sadBossDeath: {fileID: 8300000, guid: e6b4c064d1603614098c4115ea853e51, type: 3}
-  bossMusic: {fileID: 8300000, guid: 13f0f4c72eba16642899d968b728dc49, type: 3}
+  bossMusic: {fileID: 8300000, guid: 9158123112546d94597779aabde31a53, type: 3}
 --- !u!4 &2060804268
 Transform:
   m_ObjectHideFlags: 0
@@ -3099,8 +3099,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
-  m_Pitch: 1
+  m_Volume: 1
+  m_Pitch: 2.67
   Loop: 0
   Mute: 0
   Spatialize: 0
